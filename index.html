@@ -1,72 +1,381 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Willkommen auf meiner privaten Homepage</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" charset="utf-8">
-function get_user_name() {
-    // This script finds the user name from the url and then replaces "IhrBenutzername" with the user name.
-    if (document.getElementsByTagName("pre")[0] && (document.getElementsByTagName("pre")[0]["className"].indexOf("username") == 0) )  {
-        path = window.location.pathname;
-        if (path.indexOf("/student/") == 0) {
-            user_name = path.substring(9);
-        } else {
-            user_name = path.substring(2);
-        }
-        user_name = user_name.substring(0,user_name.indexOf("/"));
-        user_name = user_name + "/";
-        
-        pre_user = document.getElementsByTagName("pre")[0].firstChild.nodeValue;
-        pre_user = pre_user.replace(/IhrBenutzername\//g, user_name);
-        document.getElementsByTagName("pre")[0].firstChild.nodeValue = pre_user;
-    }
-}
-</script>
-</head>
-<body onload="get_user_name()">
-<div id="header">
-    <h1>n.ethz.ch</h1>
-    <h2>&nbsp;</h2>
-</div>
-<div id="menu">
-    <ul>
-        <li><a href="./" onFocus="if(this.blur)this.blur()">Home</a></li>
-        <li><a href="download/" onFocus="if(this.blur)this.blur()">Download</a></li>
-        <li><a href="private/" onFocus="if(this.blur)this.blur()">Private</a></li>
-    </ul>
-</div>
-<div id="content">
-    <div id="columnA"> 
-        <h2> Willkommen auf meiner privaten Homepage.</h2>
-<ul>
-    <li><a href="private">Gesch&uuml;tzter Bereich</a> (Benutzername und Passwort erforderlich)</li>
-    <li><a href="download">Download Bereich</a></li>
-    </ul>
-    <p> Eine Anleitungen zur Erstellung von HTML Dokumenten, zur Web-Programmierung
-    und weiteres mehr, finden Sie unter
-    <a href="http://www.id.ethz.ch/services/list/stud_homepage">Homepage f&uuml;r Studierende</a>.
-    <br/>Bitte beachten Sie bei der Erstellung von Web-Inhalten die
-    <a href="http://www.id.ethz.ch/documentation/rechtliches">rechtlichen Rahmenbedingungen.</a></p>
-    <p>Viel Spass beim Gestalten Ihrer pers&ouml;nlichen Homepage!</p>
-    <p>Bei unüberwindlichen Problemen hilft der <a href="https://helpdesk-anfrage.ethz.ch/">Support</a> gerne weiter.</p>
-    <hr/>
-    <p>Folgende Dateien und Verzeichnisse wurden f&uuml;r Sie erzeugt:</p>
-    <pre class="username">IhrBenutzername/homepage - Verzeichnis in dem sich Ihre Webseiten befinden.
-IhrBenutzername/homepage/index.html - diese Datei
-IhrBenutzername/homepage/private - Passwortgesch&uuml;tzter Bereich
-IhrBenutzername/homepage/private/.htaccess.n - Datei mit der Zugangsregelung
-IhrBenutzername/homepage/download - Download Zone
-    </pre>
-    </div>
+<!DOCTYPE html>
 
-    <div style="clear: both;">&nbsp;</div>
-</div>
-<div id="footer">
-    <p>Designed by <a href="http://www.freecsstemplates.org" class="link1">Free CSS Templates</a></p>
-</div>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="drip.css">
+
+<html>  
+
+<head>
+
+    <title>Übungsstunde Maxim und Josua</title>
+    
+    <!-- what does this part do?? 
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                    // customised options
+                    // • auto-render specific keys, e.g.:
+                    delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                    ],
+                    // • rendering keys, e.g.:
+                    throwOnError : false
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            function changeCounter(){
+                document.getElementById("counter").innerHTML=("The text has been changed");
+            }
+        </script>
+    -->
+
+</head>
+
+<body>
+
+    <div class="content">
+
+        <a href="about.html">Über uns</a>
+
+        <h1>Einführung in die Programmierung</h1>
+            <!--<p>ETH Zürich, HS22, VL ...</p>-->
+            <p>Maxim Huber & Josua Bürki</p>
+        <hr>
+
+        <h2> Informationen </h2>
+            <p> Mittwochs, 8-10, HG F 26.5</p>
+            <p> Falls ihr irgendwo Fehler entdeckt, schreibt mir bitte eine Mail (<a href = "mailto:maximhuber@student.ethz.ch" id = "mailtext">maximhuber@student.ethz.ch</a>). </p>
+        
+        <h2>Wichtige Links</h2>
+            <p><a href="https://www.lst.inf.ethz.ch/education/einfuehrung-in-die-programmierung-i--252-0027-1.html"> Link zur Vorlesungswebseite </a></p>
+            <p><a href="https://docs.oracle.com/en/java/javase/18/docs/api/index.html">Java Dokumentation</a></p>
+            <p>...</p>
+        
+        <h2> Tipps und Empfehlungen für die aktuellen Übungen</h2>
+            <p> Priorität: 4>1>3>2 </p>
+                <ul>
+                    <li> Aufgabe 1: ... </li>
+                    <li> Aufgabe 2: ... </li>
+                    <li> Aufgabe 3: ... </li>
+                    <li> Aufgabe 4: ... </li>
+                </ul>
+
+        <h2>Dokumente & Materialien</h2>
+        
+            <table class="docs"> <!-- what does class="docs" do exactly?? -->
+            <colgroup>
+                <col style="width: 15%; text-align: left;">
+                <col style="width: 15%; text-align: left;">
+                <col style="width: 15%; text-align: left;">
+                <col style="width: 100%; text-align: left;">
+            </colgroup>
+            <thead>
+                <tr >
+                    <th><h3>Woche</h3></th>
+                    <th><h3>Folien</h3></th>
+                    <th><h3>Kahoot</h3></th>
+                    <th><h3>Inhalt</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Woche 0 (Test)</b></td>
+                    <td><a href="">Folien 0</a></td>
+                    <td><a href="">Kahoot 0</a></td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 1</b></td>
+                    <td><a href="">Folien 1</a></td>
+                    <td><a href="">Kahoot 1</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 2</b></td>
+                    <td><a href="">Folien 2</a></td>
+                    <td><a href="">Kahoot 2</a></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 3</b></td>
+                    <td><a href="">Folien 3</a></td>
+                    <td><a href="">Kahoot 3</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 4</b></td>
+                    <td><a href="">Folien 4</a></td>
+                    <td><a href="">Kahoot 4</a></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 5</b></td>
+                    <td><a href="">Folien 5</a></td>
+                    <td><a href="">Kahoot 5</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 6</b></td>
+                    <td><a href="">Folien 6</a></td>
+                    <td><a href="">Kahoot 6</a></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 7</b></td>
+                    <td><a href="">Folien 7</a></td>
+                    <td><a href=""">Kahoot 7</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 8</b></td>
+                    <td><a href="">Folien 8</a></td>
+                    <td><a href="">Kahoot 8</a></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 9</b></td>
+                    <td><a href="">Folien 9</a></td>
+                    <td><a href="">Kahoot 9</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 10</b></td>
+                    <td><a href="">Folien 10</a></td>
+                    <td><a href="">Kahoot 10</a></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 11</b></td>
+                    <td><a href="">Folien 11</a></td>
+                    <td><a href="">Kahoot 11</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 12</b></td>
+                    <td><a href="">Folien 12</a></td>
+                    <td><a href="">Kahoot 12</a></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: lightgray;">
+                    <td><b>Woche 13</b></td>
+                    <td><a href="">Folien 13</a></td>
+                    <td><a href="">Kahoot 13</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Woche 14</b></td>
+                    <td><a href="">Folien 14</a></td>
+                    <td><a href="">Kahoot 14</a></td>
+                    <td></td>
+                </tr>
+                <!--                
+                <tr>
+                    <td><b>Woche 1<b></td>
+                    <td><a href="docs/n1.pdf">Notizen</a></td>
+                    <td><a href="docs/f1.pdf">Full</a>/<a href="docs/m1.pdf">Main</a></td>
+                    <td>Körper der reellen Zahlen und Eigenschaften, Ungleichungen, Supremum und Infimum</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 2<b></td>
+                    <td><a href="docs/n2.pdf">Notizen</a></td>
+                    <td><a href="docs/f2.pdf">Full</a>/<a href="docs/m2.pdf">Main</a></td>
+                    <td>Folgen: Definition, Beispiele und Grenzwerte</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 3<b></td>
+                    <td><a href="docs/n3.pdf">Notizen</a></td>
+                    <td><a href="docs/f3.pdf">Full</a>/<a href="docs/m3.pdf">Main</a></td>
+                    <td>Fundamentallimes, limsup und liminf, Cauchy-Folgen, Teilfolgen und der Satz von Bolzano-Weierstrass, <a href="https://create.kahoot.it/share/1-quiz/7c061a3e-5356-41d6-a654-d4bd2e47419b">Kahoot </a>über alles bisherige</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 4<b></td>
+                    <td>Notizen</td>
+                    <td><a href="docs/f4.pdf">Full</a>/<a href="docs/m4.pdf">Main</a></td>
+                    <td>Reihen: Definition, Beispiele, Grenzwerte und Konvergenzkriterien</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 5<b></td>
+                    <td><a href="docs/n5.pdf">Notizen</a></td>
+                    <td><a href="docs/f5.pdf">Full</a>/<a href="docs/m5.pdf">Main</a></td>
+                    <td>Absolute Konvergenz, Restliche Konvergenzkriterien, Potenzreihen</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 6<b></td>
+                    <td><a href="docs/n6.pdf">Notizen</a></td>
+                    <td><a href="docs/f6.pdf">Full</a>/<a href="docs/m6.pdf">Main</a></td>
+                    <td>Stetigkeit: Definition, Beispiele und insbesondere Stetigkeitsbeweise</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 7<b></td>
+                    <td><a href="docs/n7.pdf">Notizen</a></td>
+                    <td><a href="docs/f7.pdf">Full</a>/<a href="docs/m7.pdf">Main</a></td>
+                    <td>Eigenschaften stetiger Funktionen, Zwischenwertsatz, Min-max Satz</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 8<b></td>
+                    <td><a href="docs/n8.pdf">Notizen</a></td>
+                    <td><a href="docs/f8.pdf">Full</a>/<a href="docs/m8.pdf">Main</a></td>
+                    <td>Funktionenfolgen, <s> Potenzreihen revisited, trigonometrische Funktionen, Exponentialfunktion und Logartithmus, Grenzwerte von Funktionen </s> </td>
+                </tr>
+                <tr>
+                    <td><b>Woche 9<b></td>
+                    <td><a href="docs/n9.pdf">Notizen</a></td>
+                    <td><a href="docs/f9.pdf">Full</a>/<a href="docs/m9.pdf">Main</a></td>
+                    <td>Potenzreihen revisited, trigonometrische Funktionen, Exponentialfunktion und Logartithmus, Grenzwerte von Funktionen, kurzer Beginn Differentialrechnung</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 10<b></td>
+                    <td><a href="docs/n10.pdf">Notizen</a></td>
+                    <td><a href="docs/f10.pdf">Full</a>/<a href="docs/m10.pdf">Main</a></td>
+                    <td>Ableitungsregeln, Sätze über die erste Ableitung, Mittelwertsatz</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 11<b></td>
+                    <td><a href="docs/n11.pdf">Notizen</a></td>
+                    <td><a href="docs/f11.pdf">Full</a>/<a href="docs/m11.pdf">Main</a></td>
+                    <td>De L'Hospital, $e^{\log}$-Trick, Extremwerte, Taylorreihen</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 12<b></td>
+                    <td><a href="docs/n12.pdf">Notizen</a></td>
+                    <td><a href="docs/f12.pdf">Full</a>/<a href="docs/m12.pdf">Main</a></td>
+                    <td>Integralrechnung: Fundamentalsatz, Eigenschaften und Tricks</td>
+                </tr>
+                <tr>
+                    <td><b>Special<b></td>
+                    <td><a href="docs/s.pdf">Notizen</a></td>
+                    <td></td>
+                    <td>Substitution</td>
+                </tr>
+                <tr>
+                    <td><b>Woche 13<b></td>
+                    <td><a href="docs/n13.pdf">Notizen</a></td>
+                    <td><a href="docs/f13.pdf">Full</a>/<a href="docs/m13.pdf">Main</a></td>
+                    <td>Integration von Potenzreihen, uneigentliche Integrale, Abschluss Kahoot</td>
+                </tr>
+                -->
+            </tbody>
+            </table>
+
+        <h2><a></a> Zusätzliche Übungen</h2>
+        <p>kommen bald :)</p>
+        
+
+        <h2> Alte Tipps/Empfehlungen</h2>
+        <p>löst zuerst die ersten Aufgaben :)</p>
+
+        <!--
+            <p> <b> Serie 11 </b>: 1>4>3>2 </p>
+            <ul>
+                <li> Aufgabe 11.1: Yep. </li>
+            </ul>
+
+        -->
+        <!--
+
+            <p> <b> Serie 10 </b>: $4>1>3>2$ </p>
+            <ul>
+                <li> Aufgabe 10.1: Yep. </li>
+                <li> Aufgabe 10.2: a) Mit Ableitungen können wir diese Eigenschaft schnell überprüfen, c) Surjektivität: Zwischenwertsatz, Injektivität: Folgt sofort aus Teil a). d) Mit der Formel für Ableitung inverser Funktionen: Endlösung: $\text{arctan}'(x) = \frac{1}{y^2+1}$.</li>
+                <li> Aufgabe 10.3: Genau wie in der Übungsstunde. Existiert der Grenzwert bei 0?</li>
+                <li> Aufgabe 10.4: Wir hatten leider keine Zeit den L'Hospital anzuschauen. Diese Aufgabe ist aber sehr wichtig: a) und b) sind relativ einfach und könnt ihr gut ohne Tipps lösen, c) ist ein bisschen schwieriger. Ihr könnt es gerne jetzt schon mal als kleine Challenge probieren, oder ihr wartet auf die nächste Übungsstunde.</li>
+            </ul>
+        <p> <b> Serie 9 </b>: $4>1>3>2$ </p>
+            <ul>
+                <li> Aufgabe 9.1: Yep. </li>
+                <li> Aufgabe 9.2: Wie schon in der Übungsstunde gesagt, brauchen wir hier keine Epsilon-Delta Beweise oder so, gucke einfach was passiert wenn wir von links bzw. von rechts kommen. Löse am besten auch noch die Aufgabe, die ich in der Übungsstunde gegeben habe, aber nicht vorgerechnet habe zu den beidseitigen Grenzwerten.</li>
+                <li> Aufgabe 9.3: Kettenregel und so, haben wir nicht angeguckt aber könnt ihr (hoffentlich) noch aus dem Gymi. Endlösungen: a) $\frac{1}{\sin(x)\cos(x)}$, b) $x^{x^a+a-1}(a\log(x)+1)$</li>
+                <li> Aufgabe 9.4: Gute Aufgabe. Hier gehts darum, mit dem Differenzenquotienten (also mit der ursprünglichen Definition der Ableitung) Dinge auszurechnen. Benutze für a) $$ \begin{aligned}
+\lim _{h \rightarrow 0} & \frac{f\left(x_{0}+n h\right)-f\left(x_{0}+(n-2) h\right)}{h} \\
+&=\lim _{h \rightarrow 0}\left(\frac{f\left(x_{0}+n h\right)-f\left(x_{0}\right)}{h}-\frac{f\left(x_{0}+(n-2) h\right)-f\left(x_{0}\right)}{h}\right)
+\end{aligned}$$ Jetzt siehst du vielleicht, was man noch hinzurechnen kann. Endlösung: $2f'(x_0)$. </li>
+            </ul>
+        <p> <b> Serie 8 </b>: $2>3>1>4$ </p>
+            <ul>
+                <li> Aufgabe 8.1: Wir haben den Stoff für Aufgabe a) und b) wegen Zeitgründen noch nicht angucken können (werden es aber bestimmt nächste Woche nachholen). Löst aber auf jeden Fall c). </li>
+                <li> Aufgabe 8.2: Spoiler: Alle drei konvergieren gleichmässig. Genau dem Kochrezept wie in der Übungsstunde folgen (beachte hier, dass $D = [0,1]$). a), b) solltet ihr ohne Tipps lösen können, zeige für c) die Ungleichung $$0\leq x(1-x)\leq 1/4, \, \; \forall x \in [0,1]$$ mit dem sollte es gut möglich sein.</li>
+                <li> Aufgabe 8.3: Solche Beweise haben wir schon 37 mal gemacht, wenn du keine Ahnung hast wie, schau wieder wie wir lokale Beschränktheit für stetige Funktionen gezeigt haebn, der Beweis ist sehr ähnlich (und sehr kurz). </li>
+                <li> Aufgabe 8.4: Trigonometrischer Schabernack. </li>
+            </ul>
+        <p> <b> Serie 7 </b>: $1>3>2>4$ </p>
+            <ul>
+                <li> Aufgabe 7.1: Gute Aufgabe, guckt euch die auf jeden Fall an. </li>
+                <li> Aufgabe 7.2: Ihr müsst zuerst überprüfen, ob die Funktion invertierbar ist (Satz 3.22 untersuchen) und dann die Inverse finden. Für b): Definiere $z = e^x$, schreibe es dann in eine quadratische Gleichung um und löse diese, dann musst du ja nur noch den $\log$ von der Lösung nehmen. </li>
+                <li> Aufgabe 7.3: Genau wie in der Übungsstunde. </li>
+                <li> Aufgabe 7.4: Mit dem Zwischenwertsatz. </li>
+            </ul>
+        <p> <b> Serie 6 </b>: $3>1>4>2$ </p>
+        <ul>
+            <li> Aufgabe 6.2: Einfach Cauchy-Produkt Formel benutzen. </li>
+            <li> Aufgabe 6.3: Strategie: GENAU dieselbe, wie bei dem Stetigkeitsbeweis von $x^2$ in der Übungsstunde, d.h. zuerst irgendwie $|x-x_0|$ rausmelken, $|x-x_0| < 1$ als vorläufige Annahme benutzen,
+            um dann umzuformen und am Schluss $\delta$ so wählen, dass es ein $\varepsilon$ beinhaltet und den Müll noch rausstreicht. Spoiler: Die finale Lösung wird $\delta = \min\{1,\varepsilon/(2e^{x_0})\}$ sein.
+            Der schwierige Teil dieser Aufgabe besteht darin, das $|x-x_0|$ rauszumelken. Klammere dafür beim Ausdruck $|f(x)-f(x_0)|$ zuerst $e^{x_0}$ raus und schreibe das was im Betrag ist noch mit der Exponentialreihe um.
+            Dann folgen viele Abschätzungen bis man beim Resultat $$|e^x-e^{x_0}| \leq ... \leq e^{x_0}|x-x_0| \left |\sum_{n=0}^{\infty} \frac{1}{2^n}\right | $$ ankommt. </li>
+            <li> Aufgabe 6.4: Für Stetigkeit: Verwende $\varepsilon - \delta$ Definition, für Unstetigkeit benutze Satz 3.7 (d.h. mit Folgen beweisen, wie bei der letzten Aufgabe in der letzten Übungsstunde)</li>
+        </ul>
+        <p> <b> Serie 5: </b> $3>1>4>2$</p>
+        <ul>
+            <li> Aufgabe 5.1: Typische Prüfungsaufgaben, versucht auch konkret Beweise zu finden oder Gegenbeispiele zu geben.</li>
+            <li> Aufgabe 5.2:  Hier gehts vor allem darum, die dritte Ungleichung zu beweisen (die erste folgt analog und die zweite kommt von der Definition). Ich finde die ML der Aufgabe nicht intuitiv, ich könnte euch keinen grossen Tipp hier hinschreiben, ohne schon die ganze Aufgabe vorzulösen, da man nicht wirklich sieht, worauf das ganze hinausgeht. Eventuell hilfreich: Argumentiere,
+                wieso ein $\beta$ existieren muss, sodass ein $N \in \N$ existiert s.d. $$ \frac{c_{n+1}}{c_n}\leq \beta$$ für $n\geq N$ und versuche diese Ungleichung mehrmals anzuwenden, um irgendwie etwas mit $\beta^n$
+                zu erhalten.
+            </nav>
+            </math> </li>
+            <li> Aufgabe 5.3: Hier müsst ihr die Konvergenzkriterien anwenden, unter anderem wird das Majoranten- und Quotientenkriterium oft helfen. Die $\sin(x)$ Funktion haben wir noch nicht angeschaut,
+            benutzt einfach, dass $|\sin(x)|\leq 1$ gilt $\forall x\in \mathbb{R}$. Diese Aufgaben sind z.T. nicht trivial. </li>
+            </math> </li>
+            <li> Aufgabe 5.4: Direktes Ausrechnen.</li>
+        </ul>
+        <p> <b> Serie 4 </b>: $3>1>2>4$</p>
+        <ul>
+            <li> Aufgabe 4.1: Typische Prüfungsaufgaben, versucht auch konkret Beweise zu finden oder Gegenbeispiele zu geben.</li>
+            <li> Aufgabe 4.2: Schreibe hier bei a) mit der Definition des Grenzwertes auf was $\lim_{n\to \infty}a_n/b_n =l$ bedeutet und forme dann um. Für b) Majorantenkriterium.  </li>
+            <li> Aufgabe 4.3: Sehr ähnlich wie in der ÜS, schaut euch nochmals die Tricks an. Für a): Verwende hier NICHT das Majorantenkriterium (das gibt ja gar keinen Grenzwert), benutze stattdessen Partialbruchzerlegung. Hier kürzen sich leider nicht alle Terme weg, es bleiben ein paar wenige übrig. </li>
+            <li> Aufgabe 4.4: Zeige zuerst die Ungleichung $$\sqrt{a_ka_k+1} \leq \frac{a_k+a_{k+1}}{2}$$ und schätze damit die Partialsummen $S_n$ von oben ab. </li>
+        </ul>
+        <p> <b> Serie 3 </b>: $2>1>3>4$</p>
+        <ul>
+            <li> Aufgabe 2.1: Typische Prüfungsaufgaben, versucht auch konkret Beweise zu finden oder Gegenbeispiele zu geben..</li>
+            <li> Aufgabe 2.2: Verwendet Trick 2, Trick Sandwich und Trick Fundamentallimes</li>
+            <li> Aufgabe 2.3: Teil a): Induktionsaufgabe &#128169; Beachte hier, dass du im Induktionsschrit von $n$ und $n+1$ auf $n+2$ schliessen möchtest, d.h. du musst die
+            Induktionsverankerung sowohl für $n=1$ als auch für $n=2$ machen. Zeige im Induktionsschritt, dass $(1+\Phi) = \Phi^2$ ergibt. Bei b) wirds komplizierter: Beweise hier $$ |b_m - \Phi| = ... =
+            \left |\frac{\Phi-\Psi }{(\Phi/\Psi)^m-1}\right | \leq \frac{\sqrt{5}}{|\Phi/\Psi|^m-1} $$ (Begründe hier alle Schritte) Nun möchten wir herausfinden, für welches $N$ dies kleiner als ein beliebiges $\varepsilon$ ist. Dazu schreiben wir
+            $$|b_m-\Phi|<\varepsilon \Longleftrightarrow \sqrt{5}<\varepsilon \left(|\Phi/\Psi|^m-1\right) \Longleftrightarrow ... \Longleftrightarrow m>\frac{\log \left(\sqrt{5}/\varepsilon +1\right )}{\log|\Phi/\Psi|}$$ und haben somit eine geeignete Wahl von $N$.</li>
+            <li> Aufgabe 2.4: Induktionsaufgabe &#128169; pop</li>
+        </ul>
+        -->
+
+        
+        <h2>Tipps fürs erste Semester</h2>
+        <p>nicht aufgeben :)</p>
+        
+        
+        <footer>
+            <hr>
+            <p style="text-align:left; margin-top: 1em; margin-bottom: 0;">
+                Haxim Muber 💩 Bosua Jürki
+                <span style="float:right;">
+                    2022
+                </span>
+
+            </p>            
+            <!--
+            <p style="text-align:left; margin: auto;">
+                <a href="mailto:maximhuber@student.ethz.ch" id="mail"> maximhuber@student.ethz.ch</a>>
+                <span style="float:right;">
+                    2022
+                </span>
+            </p>
+            -->
+        </footer>
+    </div>
 </body>
+
 </html>
+
