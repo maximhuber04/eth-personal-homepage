@@ -1,11 +1,11 @@
 /* At the top level of your code */
 @media screen and (min-width: 0px) {
     body {
-        padding:0;
+        padding: 1vh 5vw;
     }
 }
 
-@media screen and (min-width: 2000) { /*992px*/
+@media screen and (min-width: 992px) { /*992px*/
     body {
         padding: 3vh 10vw;
     }
