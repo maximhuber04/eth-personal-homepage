@@ -20,9 +20,8 @@
         <h1>Einführung in die Programmierung</h1>
         <!--<p>ETH Zürich, HS22, VL ...</p>-->
         <p>Maxim Huber & Josua Bürki</p>
-        <!--
+        
         <p style="color:red"> Wir bearbeiten die Webseite gerade, schaut doch nachher wieder vorbei.</p>
-        -->
         
         <hr>
 
@@ -54,6 +53,7 @@
         <p><a href="https://docs.oracle.com/en/java/javase/17/docs/api/index.html" target="_blank">Java 17
                 Dokumentation</a></p>
         <p><a href="https://exams.vis.ethz.ch" target="_blank">Prüfungssammlung VIS</a></p>
+        <p><a href="#Tipps">Tipps fürs erste Semester</a></p>
 
 
         <h2> Tipps und Empfehlungen für die aktuellen Übungen</h2>
@@ -69,17 +69,16 @@
             <a href="files/Eclipse_Rollback_Summary.pdf">Git/Eclipse Rollback Anleitung</a>
         </p>
 
-        
-        <p><b>Zur Serie 5:</b></p>
+        <p><b>Zur Serie 6:</b></p>
         <ul>
-            <li> Aufgabe 1: Mit einer Schleife, die solange läuft bis das Programm fertig sein sollte. Dann in jeder Iteration Input lesen.</li>
-            <li> Aufgabe 2: Aufgabe genügend gut lesen.</li>
-            <li> Aufgabe 3 (Bonus): Stellt sicher, dass ihr versteht, was eine Welle ist. Darauf ein Lösungsvorschlag ausarbeiten. Mehr dürfen wir euch nicht helfen.</li>
-            <li> Aufgabe 4: Für Spassvögel.</li>
-            <li> Aufgabe 5: Siehe Aufgabe 4.</li>
-            <li> Aufgabe 6: Klassische EBNF-Aufgaben. Denkt dran: wenn ihr während dem Semester solche Aufgaben löst, könnt ihr sie bis hin zur Prüfung gut.</li>
-            <li> Aufgabe 7: Ähnlich wie die Rekursionsaufgabe, die wir besprochen & hochgeladen haben.</li>
+            <li> Aufgabe 1 (Bonus): Rekursion und/oder DP. Überlegt euch den Rekursionsbaum, Basecase etc. Wir würden es mit ganz normaler Rekursion lösen.</li>
+            <li> Aufgabe 2: In-/Output Slides anschauen, sonst ist alles gut beschrieben. Gute Aufgabe, um mit Objekten zu üben.</li>
+            <li> Aufgabe 3: - </li>
+            <li> Aufgabe 4: Probiert zu verstehen, was der Loop macht. Anhand von dem dann die Invariante konstruieren, wie wirs in der Übungsstunde noch einmal vorgemacht haben.</li>
+            <li> Aufgabe 5: Benutzt die <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html">Math-Klasse</a>. Ihr seht dann selbst, ob eure Uhr korrekt/schön ist.</li>
         </ul>
+        
+        
 
         <h2>Dokumente & Materialien</h2>
         <div >
@@ -130,10 +129,11 @@
                             Variablen, Operator Precedence,
                             Type Casting, String-Operationen, Pre- und Postconditions, Hoare-Tripel, Short-Circuit
                             Evaluation, U2 Vorbesprechung, Kahoot🧐.
-                            <p style="color:red; font-size: small;"> Beachtet die Zusatzaufgaben, die wir hochgeladen haben! </p>
+                            <p style="color:green; font-size: small;"> Beachtet die <a href="#Zusatz">Zusatzaufgaben</a>, die wir hochgeladen haben! </p>
+                            <!--
                             <p style="color:green; font-size: small;">Wir mussten die Slides komprimieren, um sie hier
                                 hochzuladen. Darum die etwas schwächere Bildqualität.</p>
-
+                            -->
                         </td>
                     </tr>
                     <tr style="background-color: lightgray;">
@@ -166,13 +166,14 @@
                             <a href="files/window_class_summary.pdf">Window Class Summary (GUI)</a>
                         </td>
                         <td><a href="https://create.kahoot.it/share/21-u5-eprog-mschoeb/7b32ebf0-50c0-4424-960f-edafc0efd85f" target="_blank">Kahoot 5</a></td>
-                        <td>Besprechung U4, File In/Output, GUI, Vorbesprechung U5, Programmieren einer Rekursions-Aufgabe, Kahoot</td>
+                        <td>Nachbesprechung U4, File In/Output, GUI, Vorbesprechung U5, Programmieren einer Rekursions-Aufgabe, Kahoot.</td>
                     </tr>
                     <tr>
                         <td><b>Woche 6</b></td>
-                        <td><a role="link">Folien 6</a></td>
-                        <td><a role="link" target="_blank">Kahoot 6</a></td>
-                        <td></td>
+                        <td><a href="files/Uebungsstunde 6.pdf">Folien 6</a></td>
+                        <td><a href="https://create.kahoot.it/details/3612dc0f-e690-4f15-a9e1-f4850e6b0da8" target="_blank">Kahoot 6</a></td>
+                        <td>Nachbesprechung U5, Theorie: Klassen & Objekte, Lösen & Besprechen alte Prüfungsaufgaben (<a href="https://exams.vis.ethz.ch/exams/k2aa884b.pdf">FS18</a> Aufgaben 1,3,7), Vorbesprechung U6, Kahoot.
+                            <p style="color:green; font-size: small;"> Unter <a href="#Zusatz">Zusatzaufgaben</a> Woche 6 findet ihr weitere Übungen! </p></td>
                     </tr>
                     <tr style="background-color: lightgray;">
                         <td><b>Woche 7</b></td>
@@ -219,14 +220,35 @@
                 </tbody>
             </table>
         </div>
-        <h2><a></a> Zusätzliche Übungen</h2>
+        <h2 id="Zusatz"><a></a> Zusätzliche Übungen</h2>
+        
+        <p><b>Woche 2</b></p>
         <ul>
-            <li> <a href="files/Zusatzaufgaben Lektion 2.pdf"> Woche 2</a> </li>
+            <li>
+                <a href="files/Zusatzaufgaben Lektion 2.pdf"> Folien zu Zusatzaufgaben</a>
+            </li>
         </ul>
 
+        <p><b>Woche 6</b></p>
+        <ul>
+            <li> Folien/Aufgabenstellungen findet ihr bei den Slides der Woche 6. </li>
+            <li> <a href="files/E6.zip" download="E6.zip">Download Java Projekt (Lösungen)</a> </li>
+            <li> Meldet euch, falls es nicht funktioniert mit Download/Import in Eclipse. </li>
+        </ul>
 
         <h2> Alte Tipps/Empfehlungen</h2>
         <!-- <p>löst zuerst die ersten Aufgaben :)</p> -->
+
+        <p><b>Serie 5</b></p>
+        <ul>
+            <li> Aufgabe 1: Mit einer Schleife, die solange läuft bis das Programm fertig sein sollte. Dann in jeder Iteration Input lesen.</li>
+            <li> Aufgabe 2: Aufgabe genügend gut lesen.</li>
+            <li> Aufgabe 3 (Bonus): Stellt sicher, dass ihr versteht, was eine Welle ist. Darauf ein Lösungsvorschlag ausarbeiten. Mehr dürfen wir euch nicht helfen.</li>
+            <li> Aufgabe 4: Für Spassvögel.</li>
+            <li> Aufgabe 5: Siehe Aufgabe 4.</li>
+            <li> Aufgabe 6: Klassische EBNF-Aufgaben. Denkt dran: wenn ihr während dem Semester solche Aufgaben löst, könnt ihr sie bis hin zur Prüfung gut.</li>
+            <li> Aufgabe 7: Ähnlich wie die Rekursionsaufgabe, die wir besprochen & hochgeladen haben.</li>
+        </ul>
 
         <p><b>Serie 4</b></p>
         <ul>
@@ -275,7 +297,7 @@
         </ul>
 
 
-        <h2>Tipps fürs erste Semester</h2>
+        <h2 id="Tipps">Tipps fürs erste Semester</h2>
         <ul>
             <li> Bleibt an den Vorlesungen dran. </li>
             <li> Löst die Übungen. Am Ende müsst ihr nur die Prüfungen lösen können, und die bestehen aus Übungen. 🤯
