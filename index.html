@@ -21,8 +21,9 @@
         <!--<p>ETH Zürich, HS22, VL ...</p>-->
         <p>Maxim Huber & Josua Bürki</p>
         
-        
+        <!--
         <p style="color:red"> Wir bearbeiten die Webseite gerade, schaut doch nachher wieder vorbei.</p>
+        -->
         
         <hr>
 
@@ -38,13 +39,6 @@
             <li><a href = "mailto:maximhuber@student.ethz.ch" id = "mailtext">maximhuber@student.ethz.ch</a></li>
             <li><a href = "mailto:jbuerki@student.ethz.ch" id = "mailtext">jbuerki@student.ethz.ch</a></li>
         </ul>
-        <!--
-        <p> Unsere E-Mail-Adressen: </p>
-        <ul>
-            <li><a href="mailto:maximhuber@student.ethz.ch" id="mailtext">maximhuber@student.ethz.ch</a></li>
-            <li><a href="mailto:jbuerki@student.ethz.ch" id="mailtext">jbuerki@student.ethz.ch</a></li>
-        </ul> 
-        -->
 
         <h2>Wichtige Links</h2>
         <!-- <p><a href="https://www.google.ch/" target="_blank">Google</a></p> -->
@@ -70,16 +64,21 @@
             <a href="files/Eclipse_Rollback_Summary.pdf">Git/Eclipse Rollback Anleitung</a>
         </p>
 
-        <p><b>Zur Serie 6:</b></p>
+
+        <p><b>Zur Serie 8:</b></p>
         <ul>
-            <li> Aufgabe 1 (Bonus): Rekursion und/oder DP. Überlegt euch den Rekursionsbaum, Basecase etc. Wir würden es mit ganz normaler Rekursion lösen.</li>
-            <li> Aufgabe 2: In-/Output Slides anschauen, sonst ist alles gut beschrieben. Gute Aufgabe, um mit Objekten zu üben.</li>
-            <li> Aufgabe 3: - </li>
-            <li> Aufgabe 4: Probiert zu verstehen, was der Loop macht. Anhand von dem dann die Invariante konstruieren, wie wirs in der Übungsstunde noch einmal vorgemacht haben.</li>
-            <li> Aufgabe 5: Benutzt die <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html">Math-Klasse</a>. Ihr seht dann selbst, ob eure Uhr korrekt/schön ist.</li>
+            <li> Aufgabe 1: Wie schon oft besprochen. Versteht, was der Loop macht.
+                Schaut die Postcondition an und probiert daraus schon eine mögliche Invariante zu bauen.
+                Vergesst nicht die Loop-Variable in der Invariante einzubeziehen.
+                Wenn steht, dass ihr die substring Methode benutzen sollt, tut das auch.</li>
+            <li> Aufgabe 2: Macht es am besten rekursiv. Arbeitet euch durch die Äste des Baums durch,
+                bis ihr Blätter erreicht (von dort aus kommt ihr nur noch zurück, also Base Case).</li>
+            <li> Aufgabe 3: Versucht einfach, nicht die Übersicht zu verlieren. Überlegt (und notiert) euch, 
+                was genau in jedem Zeitschritt passieren soll. Die eigentlichen Methoden zu implementieren ist nicht sehr schwierig.</li>
+            <li> Aufgabe 4: Wahrscheinlich nicht die relevanteste Aufgabe, aber cool zu lösen.</li>
+            <li> Aufgabe 5: (a) ist eigentlich selbsterklärend. Sie geben euch recht viel Freiheit, wie ihrs genau lösen wollt. Tobt euch aus!
+                (b) ist auch eine tolle Aufgabe, aber praktisch nur noch Visualisierung. </li>
         </ul>
-        
-        
 
         <h2>Dokumente & Materialien</h2>
         <div >
@@ -178,15 +177,17 @@
                     </tr>
                     <tr style="background-color: lightgray;">
                         <td><b>Woche 7</b></td>
-                        <td><a role="link">Folien 7</a></td>
-                        <td><a role="link" target="_blank">Kahoot 7</a></td>
-                        <td></td>
+                        <td><a href="files/Uebungsstunde 7.pdf">Folien 7</a></td>
+                        <td><a href="https://create.kahoot.it/share/21-u07-eprog-mschoeb/19bdfeae-3305-4cb8-8af0-2fc07ae3e127" target="_blank">Kahoot 7</a></td>
+                        <td>Basisjahr-Motivation, allgemeine Tipps, Nachbesprechung, Vorbesprechung, Kahoot, Aufgabe vorlösen, Linked-Lists und Referenzen.</td>
                     </tr>
                     <tr>
                         <td><b>Woche 8</b></td>
-                        <td><a role="link">Folien 8</a></td>
-                        <td><a role="link" target="_blank">Kahoot 8</a></td>
-                        <td></td>
+                        <td><a href="files/Uebungsstunde 8.pdf">Folien 8</a></td>
+                        <td><a href="https://create.kahoot.it/share/21-u8-eprog-mschoeb/8936e892-2f21-46c4-8ad8-327f47629055" target="_blank">Kahoot 8</a></td>
+                        <td>Nachbesprechung, eigenständiges Lösen einer alten Bonusaufgabe & anschliessendes Besprechen, Vorbesprechung neue Aufgaben, Kahoot.
+                            <p style="color:green; font-size: small;"> Die Aufgabenbeschreibung & das Java-Projekt der Aufgabe, die ihr gelöst habt, findet ihr unter <a href="#Zusatz">Zusatzaufgaben</a>.</p>
+                        </td>
                     </tr>
                     <tr style="background-color: lightgray;">
                         <td><b>Woche 9</b></td>
@@ -237,7 +238,42 @@
             <li> Meldet euch, falls es nicht funktioniert mit Download/Import in Eclipse. </li>
         </ul>
 
+        <p><b>Woche 8</b></p>
+        <ul>
+            <li> <a href="files/TaskDescription.pdf"> Aufgabenblatt</a> </li>
+            <li> <a href="files/bonus-task-archive-main-projects-W7Y20.zip" download="bonus-task-archive-main-projects-W7Y20.zip">Java-Projekt</a> </li>
+            <li> Weitere solche alte Bonusaufgaben findet ihr in der <a href="https://exams.vis.ethz.ch/exams/xwpaplmk.pdf"> Prüfungssammlung</a>.
+                Diese lohnen sich vor allem während der Lernphase.</li>
+        </ul>
+
         <h2> Alte Tipps/Empfehlungen</h2>
+
+        <details>
+            <summary><b>Serie 7</b></summary>
+            <ul>
+                <li> Aufgabe 1: Klassisch EBNF. Invesiert die Zeit und löst die Aufgaben.</li>
+                <li> Aufgabe 2: Haben wir in der Übungsstunde angefangen. Die ganze Magie hinter 
+                    diesen Linked-List Aufgaben ist eigentlich nur, die Referenzen in der richtigen 
+                    Reihenfolge an die richtigen Orte zu setzen. Überlegt euch unbedingt im Voraus, 
+                    was eure Methode tun soll - ansonsten braucht ihr ewig.
+                </li>
+                <li> Aufgabe 3: Dasselbe Prinzip, nur bisschen schwieriger.</li>
+                <li> Aufgabe 4: Nicht den Überblick verlieren und die Aufgabenstellung gut lesen.
+                    Ist in unseren Augen eine gut machbare Aufgabe, wenn man die Zeit investiert.</li>
+                <li> Aufgabe 5: Rekursion x GUI. Interessant, aber nicht prüfungsrelevant.</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><b>Serie 6</b></summary>
+            <ul>
+                <li> Aufgabe 1 (Bonus): Rekursion und/oder DP. Überlegt euch den Rekursionsbaum, Basecase etc. Wir würden es mit ganz normaler Rekursion lösen.</li>
+                <li> Aufgabe 2: In-/Output Slides anschauen, sonst ist alles gut beschrieben. Gute Aufgabe, um mit Objekten zu üben.</li>
+                <li> Aufgabe 3: - </li>
+                <li> Aufgabe 4: Probiert zu verstehen, was der Loop macht. Anhand von dem dann die Invariante konstruieren, wie wirs in der Übungsstunde noch einmal vorgemacht haben.</li>
+                <li> Aufgabe 5: Benutzt die <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html">Math-Klasse</a>. Ihr seht dann selbst, ob eure Uhr korrekt/schön ist.</li>
+            </ul>
+        </details>
 
         <details>
             <summary><b>Serie 5</b></summary>
